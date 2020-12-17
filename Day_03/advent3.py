@@ -41,28 +41,28 @@ for y in range(10):
 pprint(grid)
 
 
-# def trees(x, y):
-#     currentline = lines[x]
-#     print(currentline)
-#     #    ...##.###..###
-#
-#
-#     if currentline[(x * 3) % 32] == "#":
-#         y += 1
-#
-#     for i in currentline:
-#         #.
-#         #.
-#
-#
-#         if i[(x * 3) % 32] == "#":
-#             y += 1
-#     x += 1
-#     if x == 1:
-#         return bla
-#     else:
-#         return trees(x, y)
-#
-#
-# trees(pos, count)
-# print(count)
+ def trees(x, y):
+     currentline = lines[x]
+     print(currentline)
+     #    ...##.###..###
+
+
+     if currentline[(x * 3) % 32] == "#":
+         y += 1
+
+     for i in currentline:
+         #.
+         #.
+
+
+         if i[(x * 3) % 32] == "#":
+             y += 1
+     x += 1
+     if x == 1:
+         return bla
+     else:
+         return trees(x, y)
+
+
+ trees(pos, count)
+ print(count)
