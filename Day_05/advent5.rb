@@ -28,13 +28,7 @@ file_data.each do | i |
     end
 ids << (x * 8 + a)
 end
-puts ids.max
+puts "Solution for part 1 is:", ids.max
 
-sorted_ids = ids.sort
-
-sorted_ids.each_with_index do | a, i |
-    if a + 2 == sorted_ids[i + 1]
-        puts a + 1
-        break
-    end
-end
+ids_range =* (ids.min..ids.max)
+puts "Solution for part 2 is:", ids_range.sum - ids.sum
